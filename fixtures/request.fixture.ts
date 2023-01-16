@@ -21,7 +21,7 @@ class AuthenticatedRequest {
         return this.request.post(url,{
             data,
             headers:{
-                Authorization: `Bearer ${AuthenticatedRequest.tokens[tokenKey]}`
+                Authorization: `Bearer ${tokens[tokenKey]}`
             }
         })
     }
